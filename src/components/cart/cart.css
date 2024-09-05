@@ -1,0 +1,132 @@
+.cart {
+  padding: 20px;
+  border-left: 1px solid #ddd;
+  max-width: 400px;
+  margin-left: auto;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+.cart h2 {
+  margin-top: 0;
+  font-size: 1.5em;
+  color: #333;
+}
+
+.cart-items {
+  margin-bottom: 20px;
+}
+
+.cart-item {
+  display: flex;
+  align-items: center;
+  border-bottom: 1px solid #ddd;
+  padding: 10px 0;
+}
+
+.cart-item img {
+  width: 100px;
+  height: 100px;
+  object-fit: cover;
+  border-radius: 4px;
+  margin-right: 10px;
+}
+
+.cart-item-info {
+  flex: 1;
+  position: relative;
+}
+
+.cart-item-name {
+  font-size: 1em;
+  margin: 0 0 5px;
+}
+
+.cart-item-price {
+  font-size: 0.9em;
+  color: #888;
+}
+
+.remove-item {
+  position: absolute;
+  top: 10px;
+  right: 10px;
+  background: none;
+  border: none;
+  cursor: pointer;
+  color: #FC8019;
+}
+
+.remove-item:hover {
+  color: #e07b0d;
+}
+
+.cart-summary {
+  border-top: 1px solid #ddd;
+  padding-top: 10px;
+}
+
+.cart-summary p {
+  margin: 5px 0;
+  font-size: 1em;
+}
+
+.cart-summary .pay-button {
+  padding: 10px 20px;
+  font-size: 1em;
+  color: white;
+  background-color: #28a745;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  width: 100%;
+  margin-top: 10px;
+}
+
+.cart-summary .pay-button:hover {
+  background-color: #218838;
+}
+
+.payment-methods {
+  margin-bottom: 20px;
+  display: flex;
+  justify-content: center; /* Centra horizontalmente los botones */
+  gap: 10px; /* Espacio entre los botones */
+}
+
+.payment-button-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  cursor: pointer;
+  text-align: center;
+}
+
+.payment-button {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 10px;
+  font-size: 1em;
+  color: #333;
+  background-color: #f0f0f0;
+  border: 1px solid #ddd;
+  border-radius: 4px;
+  transition: background-color 0.3s, border-color 0.3s;
+}
+
+.payment-button-container.active .payment-button {
+  background-color: #e0ffe0; /* Color de fondo para el botón activo */
+}
+
+.payment-button:hover {
+  background-color: #ddd;
+}
+
+.payment-icon {
+  font-size: 2em; /* Ajusta este valor para que todos los íconos tengan el mismo tamaño */
+}
+
+.payment-text {
+  font-size: 0.9em;
+  margin-top: 5px; /* Espacio entre el ícono y el texto */
+}
